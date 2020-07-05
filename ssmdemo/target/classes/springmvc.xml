@@ -39,7 +39,9 @@
 
     <!-- 将dispatcherServlet 不能处理的请求推给 默认servlet执行 -->
     <mvc:default-servlet-handler />
-
+    <!-- 静态资源放行 -->
+    <mvc:resources mapping="/bootstrap-3.3.7-dist/**" location="/bootstrap-3.3.7-dist/"/>
+    <mvc:resources mapping="/js/**" location="/js/"/>
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/jsp/"></property>

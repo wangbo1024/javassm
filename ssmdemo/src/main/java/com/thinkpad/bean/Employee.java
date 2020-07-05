@@ -39,6 +39,17 @@ public class Employee {
         return gender;
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", age=" + age +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
+
     public void setGender(String gender) {
         this.gender = gender == null ? null : gender.trim();
     }

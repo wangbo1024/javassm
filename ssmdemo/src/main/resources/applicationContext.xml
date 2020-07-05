@@ -50,9 +50,9 @@
     <bean id="sqlSessionFactory"
           class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"></property>
-        <!-- 扫描我们制定目录下的mapper.xml文件 -->
-        <!--<property name="mapperLocations"
-                  value="classpath:mapper/*.xml"></property>-->
+         <!--扫描我们制定目录下的mapper.xml文件-->
+        <property name="mapperLocations"
+                  value="classpath:mapper/*.xml"></property>
         <!-- 加载mybatis的配置文件 -->
         <property name="configLocation"
                   value="classpath:sqlMapConfig.xml"></property>
